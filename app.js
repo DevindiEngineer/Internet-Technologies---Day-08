@@ -1,4 +1,4 @@
-console.log("Hi!");
+console.log("Hi!")
 
 //clear
 localStorage.clear()
@@ -14,3 +14,6 @@ localStorage.setItem("name","dew")
 
 //if you want another name make a  new variable
 localStorage.setItem("name1","Pealy")
+
+//Delete
+localStorage.removeItem("name1")
