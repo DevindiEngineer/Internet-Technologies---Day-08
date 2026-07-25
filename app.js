@@ -1,3 +1,4 @@
+
 const customerList = JSON.parse(localStorage.getItem("customerList"));
 
 function btnAddCustomerOnAction() {
@@ -62,7 +63,14 @@ function btnClearStorageOnAction() {
 function btnLoadTableOnAction() {
     let customerList = JSON.parse(localStorage.getItem("customerList"));
 
-    let body = "";
+    let body = `
+      <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+    `;
     customerList.forEach(element => {
         body+=`
                 <tr>
